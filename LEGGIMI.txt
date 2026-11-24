@@ -1,0 +1,41 @@
+Italy Decoded - Attivatori animati (per gli effetti sonori)
+=============================================================
+
+COME APRIRLO
+- Doppio clic su index.html (Chrome, Edge o Firefox). Serve la connessione a internet: la libreria 3D e i
+  caratteri arrivano da CDN. I modelli invece sono tutti nella cartella "models".
+- In alternativa la cartella si può caricare così com'è su un qualsiasi hosting statico (Netlify, GitHub Pages,
+  un server web): funziona uguale.
+
+COSA C'È
+- I 14 attivatori del carosello dei settori, con le clip dell'app: Hover (quella da sonorizzare) e Idle.
+- Sotto ogni oggetto una timeline: righello in secondi e fotogrammi, curva di quanto si muove l'oggetto, marker
+  dei momenti puntuali (impulsi, scintille, onde radar...) con il nome della parte che li fa.
+- Si può trascinare un proprio file audio su un oggetto: parte insieme alla clip e ricomincia a ogni giro del
+  loop; la pagina dice se la durata coincide con quella della clip. Il file resta nel browser.
+- "Scarica marker (CSV)": i tempi dei marker in secondi e fotogrammi.
+- Tasti sulla scheda selezionata: Spazio play/pausa, frecce un fotogramma (Shift: dieci), Home torna a 0.
+
+COME LE USA L'APP
+- Hover: quando la mano punta l'oggetto la clip riparte dall'inizio e va in loop finché la mano resta lì.
+  Il suono di hover funziona meglio se dura esattamente quanto la clip, così il loop resta agganciato.
+- In hover l'oggetto si ingrandisce anche un po' (lo fa il codice dell'app, non la clip).
+
+DURATE DELLE CLIP HOVER (30 fps)
+  Robotica (braccio robotico) .... 10,417 s  (250 fotogrammi a 24 fps; stessa clip anche in Idle)
+  Aerospazio (satellite) ......... 5,000 s
+  Biotech-Pharma (bioreattore) ... 5,000 s
+  Macchinari avanzati (CNC) ...... 6,000 s
+  Nautica (nave) ................. 5,000 s
+  Energia rinnovabile (turbina) .. 5,000 s
+  Agrifood (trattore) ............ 5,000 s
+  Connettività (fibra ottica) .... 5,000 s
+  Industria 4.0 (linea) .......... 5,000 s
+  Medicina (protesi) ............. 5,600 s
+  Microprocessori (scheda) ....... 5,000 s
+  Prodotti chimici (reattore) .... 6,000 s
+  Rigenerazione urbana (bosco) ... 6,000 s
+  Industria dello sport (bici) ... 5,000 s
+  Idle: 8,000 s per tutti (bosco verticale 7,000 s).
+
+A 48 kHz: 5,000 s = 240.000 campioni; 5,600 s = 268.800; 6,000 s = 288.000; 10,417 s (250/24) = 500.000.
